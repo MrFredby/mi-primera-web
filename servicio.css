@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+}
+.hero {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+}
+.hero h1 {
+    font-size: 40px;
+}
+.hero button {
+    margin-top: 20px;
+    padding:  12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.servicios {
+    padding: 40px;
+}
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition:  0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.contacto button {
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
