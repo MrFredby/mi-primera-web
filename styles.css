@@ -1,154 +1,218 @@
-html{
+/* 🔹 Hace que el scroll al hacer clic en el navbar sea suave */
+html {
     scroll-behavior: smooth;
 }
+
+/* 🔹 RESPONSIVE: cuando la pantalla es menor a 768px (celular) */
+@media (max-width: 768px) {
+    section {
+        width: 90%; /* Hace las tarjetas más anchas en celular */
+    }
+
+    h1 {
+        font-size: 24px; /* Texto más pequeño en móvil */
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .layout {
+        flex-direction: column; /* Cambia columnas a vertical */
+        align-items: center; /* Centra todo */
+    }
+
+    nav ul {
+        flex-direction: column; /* Navbar en vertical */
+        gap: 10px;
+    }
+}
+
+/* 🔹 ESTILO DE TARJETAS */
 section {
     background-color: #1e293b;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
     width: 80%;
+    max-width: 600px; /* Evita que se hagan muy grandes */
+    
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transition: 0.3s;
-    max-width: 600px;
+    
+    /* Animación suave */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* 🔥 Efecto cuando pasas el mouse */
 section:hover {
-    box-shadow: 0 15px 35px rgba(0,0,0,0.7);
-    transform: translateY(-6px) scale(1.01);
+    transform: translateY(-6px) scale(1.01); /* Se levanta */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.7); /* Más sombra */
 }
-body{
+
+/* 🔹 ESTILO GENERAL DEL BODY */
+body {
     background-color: #0f172a;
     color: white;
     font-family: Arial;
     text-align: center;
+
     display: flex;
     justify-content: center;
-    animation: fadeIn 1s ease-in-out;
+
     margin: 0;
+
+    /* Animación al cargar */
+    animation: fadeIn 1s ease-in-out;
 }
+
+/* 🔹 TITULOS */
 h1 {
     color: #38bdf8;
 }
+
 header h1 {
     font-size: 32px;
 }
+
 h2 {
     color: #22c55e;
 }
+
+/* 🔹 TEXTO */
 p {
     font-size: 18px;
 }
-img {
-    border-radius: 10px;
-    margin-top: 10px;
 
+/* 🔹 IMÁGENES */
+img {
+    margin-top: 20px;
+    border-radius: 15px;
 }
-.conainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-direction: row;
+
+/* 🔹 CONTENEDOR PRINCIPAL */
+/* ⚠️ Tenías error: "conainer" → corregido a "container" */
+.container {
     width: 100%;
-    max-width: 800%;
+    max-width: 800px;
 }
+
+/* 🔹 HEADER (nombre arriba) */
 header {
     background-color: #1e293b;
     padding: 20px;
     border-radius: 10px;
     width: 80%;
     margin: 20px auto;
+
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
     margin-bottom: 30px;
     margin-top: 10px;
 }
-section:hover {
-    transform: scale(1.02);
-    transition: 0.3s;
-    transform: hover(-5px);
-    transform: translateY(-8px); scale: (1.02);
-}
+
+/* 🔹 BOTÓN */
 button {
-    background-color: #38bdf8;  
-    color: white;   
-    border: none;   
-    padding: 12px 30px; 
+    background-color: #38bdf8;
+    color: white;
+    border: none;
+
+    padding: 12px 30px;
     border-radius: 10px;
+
     cursor: pointer;
     font-weight: bold;
-    margin-top: 10px;
+
     display: block;
     margin: 30px auto;
+
     font-size: 16px;
+
     transition: 0.3s ease;
+
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
+
+/* 🔥 Hover botón */
 button:hover {
     background-color: #0ea5e9;
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
+
+/* 🔹 FOOTER */
 footer {
-    margin-top: 20px; 
-    padding: 10px; 
+    margin-top: 20px;
+    padding: 10px;
 }
+
+/* 🔹 LISTAS */
 ul {
-    list-style-position: inside; 
-    padding: 0; 
+    list-style-position: inside;
+    padding: 0;
 }
-img {
-    margin-top: 20px; 
-    border-radius: 15px; 
-}
+
+/* 🔹 NAVBAR */
 nav {
     background-color: #1e293b;
     padding: 15px;
-    position: sticky;
+
+    position: sticky; /* Se queda fijo arriba */
     top: 0;
-    z-index: 100;
+
+    z-index: 100; /* Siempre encima */
+
     margin-bottom: 20px;
     width: 100%;
+
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
+
+/* 🔹 LISTA DEL NAV */
 nav ul {
-    list-style: none;   
-    display: flex;  
-    justify-content: center; 
-    gap: 20px;  
-    padding: 0; 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
 }
+
+/* 🔹 LINKS */
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
+
     transition: all 0.3s ease;
 }
+
+/* 🔥 Hover links */
 nav a:hover {
     color: #38bdf8;
     transform: scale(1.1);
 }
+
+/* 🔹 LAYOUT (columnas) */
 .layout {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    max-width: 900px;
+    margin: auto;
 }
+
+/* 🔹 COLUMNAS */
 .left, .right {
     flex: 1;
 }
+
+/* 🔹 COLUMNA DERECHA */
 .right {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-@media (max-width: 768px) {
-    .layout {
-        flex-direction: column;
-}
-}
-.layout{
-    max-width: 900px;
-    margin: auto;
-}
+
+/* 🔹 ANIMACIÓN DE ENTRADA */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
