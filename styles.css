@@ -42,3 +42,7 @@ header {
     margin: 20px auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+section:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
