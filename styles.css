@@ -1,147 +1,73 @@
-/* 🔹 Hace que el scroll al hacer clic en el navbar sea suave */
+/* 🔹 VARIABLES (colores profesionales) */
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --primary: #38bdf8;
+    --secondary: #22c55e;
+    --text: #e2e8f0;
+}
+
+/* 🔹 SCROLL SUAVE */
 html {
     scroll-behavior: smooth;
 }
 
-/* 🔹 RESPONSIVE: cuando la pantalla es menor a 768px (celular) */
-@media (max-width: 768px) {
-    section {
-        width: 90%; /* Hace las tarjetas más anchas en celular */
-    }
-
-    h1 {
-        font-size: 24px; /* Texto más pequeño en móvil */
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .layout {
-        flex-direction: column; /* Cambia columnas a vertical */
-        align-items: center; /* Centra todo */
-    }
-
-    nav ul {
-        flex-direction: column; /* Navbar en vertical */
-        gap: 10px;
-    }
-}
-
-/* 🔹 ESTILO DE TARJETAS */
-section {
-    background-color: #1e293b;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 600px; /* Evita que se hagan muy grandes */
-    
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    
-    /* Animación suave */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* 🔥 Efecto cuando pasas el mouse */
-section:hover {
-    transform: translateY(-6px) scale(1.01); /* Se levanta */
-    box-shadow: 0 15px 35px rgba(0,0,0,0.7); /* Más sombra */
-}
-
-/* 🔹 ESTILO GENERAL DEL BODY */
+/* 🔹 BODY BASE */
 body {
-    background-color: #0f172a;
-    color: white;
-    font-family: Arial;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Arial, sans-serif;
     text-align: center;
-
-    display: flex;
-    justify-content: center;
-
     margin: 0;
-
-    /* Animación al cargar */
     animation: fadeIn 1s ease-in-out;
+}
+
+/* 🔹 CONTENEDOR PRINCIPAL */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* 🔹 HEADER */
+header {
+    background-color: var(--card);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 /* 🔹 TITULOS */
 h1 {
-    color: #38bdf8;
-}
-
-header h1 {
-    font-size: 32px;
+    color: var(--primary);
 }
 
 h2 {
-    color: #22c55e;
+    color: var(--secondary);
+}
+
+/* 🔹 TARJETAS */
+section {
+    background-color: var(--card);
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+
+    transition: all 0.3s ease;
+}
+
+/* 🔥 HOVER TARJETAS */
+section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8);
 }
 
 /* 🔹 TEXTO */
 p {
-    font-size: 18px;
-}
-
-/* 🔹 IMÁGENES */
-img {
-    margin-top: 20px;
-    border-radius: 15px;
-}
-
-/* 🔹 CONTENEDOR PRINCIPAL */
-/* ⚠️ Tenías error: "conainer" → corregido a "container" */
-.container {
-    width: 100%;
-    max-width: 800px;
-}
-
-/* 🔹 HEADER (nombre arriba) */
-header {
-    background-color: #1e293b;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    margin: 20px auto;
-
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-
-    margin-bottom: 30px;
-    margin-top: 10px;
-}
-
-/* 🔹 BOTÓN */
-button {
-    background-color: #38bdf8;
-    color: white;
-    border: none;
-
-    padding: 12px 30px;
-    border-radius: 10px;
-
-    cursor: pointer;
-    font-weight: bold;
-
-    display: block;
-    margin: 30px auto;
-
     font-size: 16px;
-
-    transition: 0.3s ease;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-}
-
-/* 🔥 Hover botón */
-button:hover {
-    background-color: #0ea5e9;
-    transform: scale(1.1);
-}
-
-/* 🔹 FOOTER */
-footer {
-    margin-top: 20px;
-    padding: 10px;
 }
 
 /* 🔹 LISTAS */
@@ -152,21 +78,18 @@ ul {
 
 /* 🔹 NAVBAR */
 nav {
-    background-color: #1e293b;
+    background-color: var(--card);
     padding: 15px;
 
-    position: sticky; /* Se queda fijo arriba */
+    position: sticky;
     top: 0;
-
-    z-index: 100; /* Siempre encima */
-
-    margin-bottom: 20px;
-    width: 100%;
+    z-index: 100;
 
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+
+    backdrop-filter: blur(10px);
 }
 
-/* 🔹 LISTA DEL NAV */
 nav ul {
     list-style: none;
     display: flex;
@@ -175,29 +98,22 @@ nav ul {
     padding: 0;
 }
 
-/* 🔹 LINKS */
 nav a {
-    color: white;
+    color: var(--text);
     text-decoration: none;
     font-weight: bold;
-
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
-/* 🔥 Hover links */
 nav a:hover {
-    color: #38bdf8;
+    color: var(--primary);
     transform: scale(1.1);
 }
 
-/* 🔹 LAYOUT (columnas) */
+/* 🔹 LAYOUT */
 .layout {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-
-    max-width: 900px;
-    margin: auto;
+    gap: 30px;
 }
 
 /* 🔹 COLUMNAS */
@@ -209,18 +125,77 @@ nav a:hover {
 .right {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
 }
 
-/* 🔹 ANIMACIÓN DE ENTRADA */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
+/* 🔹 PROYECTOS */
 .proyecto {
-    background-color: #0f172a;
+    background-color: var(--bg);
     padding: 15px;
     border-radius: 10px;
     margin-top: 15px;
+}
 
+/* 🔹 BOTÓN */
+button {
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    border: none;
+
+    padding: 12px 30px;
+    border-radius: 12px;
+
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(56,189,248,0.5);
+}
+
+/* 🔹 IMAGEN */
+img {
+    margin-top: 15px;
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+}
+
+/* 🔹 FOOTER */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* 🔹 RESPONSIVE */
+@media (max-width: 768px) {
+
+    .layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* 🔹 ANIMACIÓN */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
