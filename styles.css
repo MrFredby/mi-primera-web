@@ -10,10 +10,11 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition: 0.3s;
     max-width: 600px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 section:hover {
     box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+    transform: translateY(-6px) scale(1.01);
 }
 body{
     background-color: #0f172a;
@@ -23,6 +24,7 @@ body{
     display: flex;
     justify-content: center;
     animation: fadeIn 1s ease-in-out;
+    margin: 0;
 }
 h1 {
     color: #38bdf8;
@@ -58,7 +60,7 @@ header {
     margin: 20px auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 section:hover {
     transform: scale(1.02);
@@ -79,6 +81,7 @@ button {
     margin: 30px auto;
     font-size: 16px;
     transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 button:hover {
     background-color: #0ea5e9;
@@ -104,6 +107,7 @@ nav {
     z-index: 100;
     margin-bottom: 20px;
     width: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 nav ul {
     list-style: none;   
