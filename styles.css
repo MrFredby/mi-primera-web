@@ -53,6 +53,7 @@ header {
     margin: 20px auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 section:hover {
     transform: scale(1.02);
@@ -89,9 +90,12 @@ img {
 }
 nav {
     background-color: #1e293b;
-    padding: 10px;
+    padding: 15px;
     position: sticky;
     top: 0;
+    z-index: 100;
+    margin-bottom: 20px;
+    width: 100%;
 }
 nav ul {
     list-style: none;
@@ -104,9 +108,11 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 nav a:hover {
     color: #38bdf8;
+    transform: scale(1.1);
 }
 .layout {
     display: flex;
