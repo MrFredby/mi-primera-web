@@ -63,34 +63,34 @@ section:hover {
     transform: translateY(-8px); scale: (1.02);
 }
 button {
-    background-color: #38bdf8;  /* Color de fondo del botón */
-    color: white;   /* Color del texto del botón */
-    border: none;   /* Elimina el borde predeterminado del botón */
-    padding: 12px 30px; /* Agrega un poco de espacio dentro del botón */
-    border-radius: 10px;    /* Agrega bordes redondeados al botón */
-    cursor: pointer;    /* Cambia el cursor al pasar sobre el botón */
-    font-weight: bold;  /* Agrega negrita al texto del botón */
-    margin-top: 10px;   /* Agrega un margen superior para separar el botón del contenido */
-    display: block;  /* Asegura que el botón se comporte como un bloque para centrarlo */
-    margin: 30px auto;  /* Centra el botón horizontalmente */
-    font-size: 16px;    /* Aumenta el tamaño del texto del botón */
-    transition: 0.3s ease;  /* Agrega una transición suave para el efecto hover */
+    background-color: #38bdf8;  
+    color: white;   
+    border: none;   
+    padding: 12px 30px; 
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    margin: 30px auto;
+    font-size: 16px;
+    transition: 0.3s ease;
 }
 button:hover {
-    background-color: #0ea5e9; /* Cambia el color de fondo del botón al hacer hover */
-    transform: scale(1.1); /* Aumenta el tamaño del botón al hacer hover */
+    background-color: #0ea5e9;
+    transform: scale(1.1); 
 }
 footer {
-    margin-top: 20px; /* Agrega un margen superior para separar el pie de página del contenido */
-    padding: 10px; /* Agrega un poco de espacio dentro del pie de página */
+    margin-top: 20px; 
+    padding: 10px; 
 }
 ul {
-    list-style-position: inside; /* Coloca los puntos de la lista dentro del contenedor */ 
-    padding: 0; /* Elimina el padding predeterminado de la lista */ 
+    list-style-position: inside; 
+    padding: 0; 
 }
 img {
-    margin-top: 20px; /* Agrega un margen superior para separar la imagen del contenido */
-    border-radius: 15px; /* Agrega bordes redondeados a la imagen */
+    margin-top: 20px; 
+    border-radius: 15px; 
 }
 nav {
     background-color: #1e293b;
@@ -102,11 +102,11 @@ nav {
     width: 100%;
 }
 nav ul {
-    list-style: none;   /*  Elimina los puntos de la lista */
-    display: flex;  /* Utiliza flexbox para organizar los elementos del menú en una fila */
-    justify-content: center;    /* Centra los elementos del menú horizontalmente */
-    gap: 20px;  /*  Agrega espacio entre los elementos del menú */
-    padding: 0; /* Elimina el padding predeterminado de la lista */
+    list-style: none;   
+    display: flex;  
+    justify-content: center; 
+    gap: 20px;  
+    padding: 0; 
 }
 nav a {
     color: white;
