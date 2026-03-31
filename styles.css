@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 section {
     background-color: #1e293b;
     margin: 20px auto;
