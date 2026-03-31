@@ -6,6 +6,7 @@ section {
     width: 80%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition: 0.3s;
+    max-width: 600px;
 }
 body{
     background-color: #0f172a;
@@ -60,12 +61,14 @@ button {
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
+    margin-top: 10px;
 }
 button:hover {
     background-color: #0ea5e9;
+    transform: scale(1.05);
 }
 footer {
     margin-top: 20px;
@@ -73,4 +76,30 @@ footer {
 ul {
     list-style-position: inside;
     padding: 0;
+}
+img {
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.left, .right {
+    flex: 1;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+}
+}
+.layout{
+    max-width: 900px;
+    margin: auto;
 }
