@@ -199,3 +199,8 @@ footer {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
