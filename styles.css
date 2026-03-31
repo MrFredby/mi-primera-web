@@ -65,6 +65,8 @@ button {
     cursor: pointer;
     font-weight: bold;
     margin-top: 10px;
+    display: block;
+    margin: 20px auto;
 }
 button:hover {
     background-color: #0ea5e9;
