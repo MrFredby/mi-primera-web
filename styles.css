@@ -1,138 +1,145 @@
-html{
-    scroll-behavior: smooth;
+html{   /* Estilos para el elemento raíz de la página */
+    scroll-behavior: smooth;    /*  Agrega un desplazamiento suave al hacer clic en los enlaces de navegación */
 }
-section {
-    background-color: #1e293b;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transition: 0.3s;
-    max-width: 600px;
+section {   /* Estilos para las secciones de la página */
+    background-color: #1e293b;  /* Color de fondo de las secciones */
+    margin: 20px auto;  /*  Agrega un margen vertical y centra las secciones horizontalmente */
+    padding: 20px;  /* Agrega un poco de espacio dentro de las secciones */
+    border-radius: 10px;    /* Agrega bordes redondeados a las secciones */
+    width: 80%; /* Establece un ancho del 80% para las secciones */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);   /* Agrega una sombra para darle profundidad a las secciones */
+    transition: 0.3s;   /* Agrega una transición suave para el efecto hover */
+    max-width: 600px;   /*  Establece un ancho máximo para las secciones */
+    transition: all 0.3s ease;  /* Agrega una transición suave para todas las propiedades al hacer hover */
 }
-body{
-    background-color: #0f172a;
-    color: white;
-    font-family: Arial;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+body{   /* Estilos para el cuerpo de la página */
+    background-color: #0f172a;  /* Color de fondo del cuerpo de la página */
+    color: white;   /* Color del texto del cuerpo de la página */
+    font-family: Arial; /* Fuente del texto del cuerpo de la página */
+    text-align: center; /* Centra el texto horizontalmente */
+    display: flex;  /* Utiliza flexbox para organizar el contenido de la página */
+    justify-content: center;    /* Centra el contenido de la página horizontalmente */
 }
-h1 {
-    color: #38bdf8;
+h1 {    /* Estilos para los encabezados de nivel 1 */
+    color: #38bdf8; /* Color de los encabezados de nivel 1 */
 }
-header h1 {
-    font-size: 32px;
+header h1 { /* Estilos específicos para el encabezado principal */
+    font-size: 32px;    /* Aumenta el tamaño del texto del encabezado principal */
 }
-h2 {
-    color: #22c55e;
+h2 {    /* Estilos para los encabezados de nivel 2 */
+    color: #22c55e; /* Color de los encabezados de nivel 2 */
 }
-p {
-    font-size: 18px;
+h3 {    /* Estilos para los encabezados de nivel 3 */
+    color: #facc15; /* Color de los encabezados de nivel 3 */
 }
-img {
-    border-radius: 10px;
-    margin-top: 10px;
+p { /* Estilos para los párrafos */
+    font-size: 18px;    /* Aumenta el tamaño del texto de los párrafos */
+}
+img {   /* Estilos para las imágenes */
+    border-radius: 10px;    /* Agrega bordes redondeados a las imágenes */
+    margin-top: 10px;   /* Agrega un margen superior para separar las imágenes del contenido */
 
 }
-.conainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-direction: row;
-    width: 100%;
-    max-width: 800%;
+.conainer{  /* Estilos para el contenedor principal de la página */
+    display: flex;  /* Utiliza flexbox para organizar el contenido del contenedor */
+    justify-content: center;    /* Centra el contenido del contenedor horizontalmente */
+    align-items: center;    /* Centra el contenido del contenedor verticalmente */
+    flex-direction: column; /*  Organiza el contenido del contenedor en una columna */
+    flex-direction: row;    /* Organiza el contenido del contenedor en una fila */
+    width: 100%;    /* Asegura que el contenedor ocupe todo el ancho de la página */
+    max-width: 800%;    /*  Establece un ancho máximo para el contenedor */
 }
-header {
-    background-color: #1e293b;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    margin-bottom: 30px;
-    margin-top: 20px;
+header {    /* Estilos para el encabezado de la página */
+    background-color: #1e293b;  /* Color de fondo del encabezado */
+    padding: 20px;  /* Agrega un poco de espacio dentro del encabezado */
+    border-radius: 10px;    /* Agrega bordes redondeados al encabezado */
+    width: 80%; /* Establece un ancho del 80% para el encabezado */
+    margin: 20px auto;  /* Agrega un margen vertical y centra el encabezado horizontalmente */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);   /* Agrega una sombra para darle profundidad al encabezado */
+    margin-bottom: 30px;    /* Agrega un margen inferior para separar el encabezado del contenido */
+    margin-top: 20px;/* Agrega un margen superior para separar el encabezado del borde superior de la página */
 }
-section:hover {
-    transform: scale(1.02);
-    transition: 0.3s;
-    transform: hover(-5px);
+section:hover { /* Estilos para el efecto hover en las secciones */
+    transform: scale(1.02); /*  Aumenta ligeramente el tamaño de la sección al hacer hover */
+    transition: 0.3s;   /* Agrega una transición suave para el efecto hover */
+    transform: hover(-5px); /* Agrega un efecto de desplazamiento hacia arriba al hacer hover */
+    transform: translateY(-8px); scale: (1.02); /* Combina el efecto de desplazamiento hacia arriba y el aumento de tamaño al hacer hover */
 }
-button {
-    background-color: #38bdf8;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 10px;
-    display: block;
-    margin: 30px auto;
-    font-size: 16px;
+button {    /* Estilos para los botones */
+    background-color: #38bdf8;  /* Color de fondo del botón */
+    color: white;   /* Color del texto del botón */
+    border: none;   /* Elimina el borde predeterminado del botón */
+    padding: 12px 30px; /* Agrega un poco de espacio dentro del botón */
+    border-radius: 10px;    /* Agrega bordes redondeados al botón */
+    cursor: pointer;    /* Cambia el cursor al pasar sobre el botón */
+    font-weight: bold;  /* Agrega negrita al texto del botón */
+    margin-top: 10px;   /* Agrega un margen superior para separar el botón del contenido */
+    display: block;  /* Asegura que el botón se comporte como un bloque para centrarlo */
+    margin: 30px auto;  /* Centra el botón horizontalmente */
+    font-size: 16px;    /* Aumenta el tamaño del texto del botón */
+    transition: 0.3s ease;  /* Agrega una transición suave para el efecto hover */
 }
-button:hover {
-    background-color: #0ea5e9;
-    transform: scale(1.05);
+button:hover {  /*  Estilos para el efecto hover en los botones */
+    background-color: #0ea5e9; /* Cambia el color de fondo del botón al hacer hover */
+    transform: scale(1.1); /* Aumenta el tamaño del botón al hacer hover */
 }
-footer {
-    margin-top: 20px;
+footer {    /* Estilos para el pie de página */
+    margin-top: 20px; /* Agrega un margen superior para separar el pie de página del contenido */
+    padding: 10px; /* Agrega un poco de espacio dentro del pie de página */
 }
-ul {
-    list-style-position: inside;
-    padding: 0;
+ul {    /* Estilos para las listas no ordenadas */
+    list-style-position: inside; /* Coloca los puntos de la lista dentro del contenedor */ 
+    padding: 0; /* Elimina el padding predeterminado de la lista */ 
 }
-img {
-    margin-top: 20px;
-    border-radius: 15px;
+img {   /*  Estilos para las imágenes */
+    margin-top: 20px; /* Agrega un margen superior para separar la imagen del contenido */
+    border-radius: 15px; /* Agrega bordes redondeados a la imagen */
 }
-nav {
-    background-color: #1e293b;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    margin-bottom: 20px;
-    width: 100%;
+nav {   /* Estilos para la barra de navegación */
+    background-color: #1e293b;  /* Color de fondo de la barra de navegación */
+    padding: 15px;  /* Agrega un poco de espacio dentro de la barra de navegación */
+    position: sticky;   /*  Hace que la barra de navegación se mantenga en su posición al hacer scroll */
+    top: 0; /* Hace que la barra de navegación se mantenga en la parte superior de la página al hacer scroll */
+    z-index: 100;   /* Asegura que la barra de navegación se mantenga por encima del contenido al hacer scroll */
+    margin-bottom: 20px;    /* Agrega un margen inferior para separar la barra de navegación del contenido */
+    width: 100%;    /* Asegura que la barra de navegación ocupe todo el ancho de la página */
 }
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 0;
+nav ul {    /* Estilos para la lista dentro de la barra de navegación */
+    list-style: none;   /*  Elimina los puntos de la lista */
+    display: flex;  /* Utiliza flexbox para organizar los elementos del menú en una fila */
+    justify-content: center;    /* Centra los elementos del menú horizontalmente */
+    gap: 20px;  /*  Agrega espacio entre los elementos del menú */
+    padding: 0; /* Elimina el padding predeterminado de la lista */
 }
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+nav a { /*  Estilos para los enlaces dentro de la barra de navegación */
+    color: white;   /* Color del texto de los enlaces de navegación */
+    text-decoration: none;  /*  Elimina el subrayado de los enlaces */
+    font-weight: bold;  /* Agrega negrita a los enlaces de navegación */
+    transition: 0.3s;   /* Agrega una transición suave para el efecto hover */
 }
-nav a:hover {
-    color: #38bdf8;
-    transform: scale(1.1);
+nav a:hover {   /* Estilos para el efecto hover en los enlaces de navegación */
+    color: #38bdf8; /* Cambia el color del enlace al hacer hover */
+    transform: scale(1.1);  /* Aumenta el tamaño del enlace al hacer hover */
 }
-.layout {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+.layout {   /* Estilos para el contenedor principal de la página */
+    display: flex;  /*
+    justify-content: space-between; /* Distribuye el espacio entre las columnas izquierda y derecha */
+    gap: 20px;  /* Agrega espacio entre las columnas izquierda y derecha */
 }
-.left, .right {
-    flex: 1;
+.left, .right { /* Estilos para las columnas izquierda y derecha */
+    flex: 1;    /* Hace que ambas columnas ocupen el mismo espacio disponible */
 }
-.right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.right {    /* Estilos específicos para la columna derecha */
+    display: flex;  /*
+    flex-direction: column; /* Organiza el contenido de la columna derecha en una columna */
+    align-items: center;    /* Centra el contenido de la columna derecha horizontalmente */
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Estilos para dispositivos con un ancho máximo de 768px (tablets y móviles) */
     .layout {
-        flex-direction: column;
+        flex-direction: column; /* Cambia la dirección del flex a columna para apilar las secciones verticalmente en dispositivos más pequeños */
 }
 }
-.layout{
-    max-width: 900px;
-    margin: auto;
+.layout{    /* Estilos para el contenedor principal de la página */
+    max-width: 900px;   /* Establece un ancho máximo para el contenedor principal */
+    margin: auto;   /* Centra el contenedor principal horizontalmente */
 }
