@@ -66,3 +66,8 @@ function guardarTareas() {
 
     localStorage.setItem("tareas", JSON.stringify(tareas));
 }
+document.getElementById("tareaInput").addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+        agregarTarea();
+    }
+});

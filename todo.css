@@ -1,33 +1,54 @@
 body {
-    background-color: var(--bg);
-    color: var(--text);
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: Arial;
+    background-color: #0f172a;
+    color: white;
     text-align: center;
     margin: 0;
-    animation: fadeIn 1s ease-in-out;
 }
-.conatiner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
 
+/* CONTENEDOR */
+.container {
+    margin-top: 50px;
 }
+
+/* INPUT */
 input {
     padding: 10px;
-    width: 300px;
-    border: 1px solid var(--text);
-    border-radius: 5px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
     margin-right: 10px;
 }
+
+/* BOTÓN */
 button {
-    padding: 10px 20px;
-    background-color: var(--primary);
-    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+
+    background-color: #38bdf8;
+    color: white;
+    font-weight: bold;
 }
+
+/* LISTA */
 li {
-    text-align: left;
-    margin: 10px 0;
+    margin-top: 15px;
+    list-style: none;
+
+    background-color: #1e293b;
+    padding: 10px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* BOTÓN ELIMINAR */
+li button {
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
