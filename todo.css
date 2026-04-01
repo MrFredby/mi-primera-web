@@ -52,3 +52,15 @@ li button {
     padding: 5px 10px;
     border-radius: 5px;
 }
+.container {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    margin: 50px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+}
+.completada {
+    text-decoration: line-through;
+    opacity: 0.6;
+}

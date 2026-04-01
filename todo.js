@@ -71,3 +71,11 @@ document.getElementById("tareaInput").addEventListener("keypress", function(e) {
         agregarTarea();
     }
 });
+function borrarTodo() {
+    document.getElementById("lista").innerHTML = "";
+    localStorage.removeItem("tareas");
+}
+function actualizarContador() {
+    let total = document.querySelectorAll("#lista li").length;
+    document.getElementById("contador").textContent = "Tareas: " + total;
+}
